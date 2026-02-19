@@ -1,63 +1,63 @@
 # TicTacToe
 
-Простая игра в крестики-нолики, созданная для тестирования работы **Blazor WebAssembly** на .NET 6.
+A simple Tic-Tac-Toe game created to test how **Blazor WebAssembly** works on .NET 6.
 
-Проект реализован как SPA-приложение на Blazor WASM без сторонних библиотек. Основная цель — проверить жизненный цикл компонентов, биндинг данных, обработку событий и перерендеринг интерфейса.
+The project is implemented as a SPA application using Blazor WASM without any third-party libraries. The main goal was to explore the component lifecycle, data binding, event handling, and UI re-rendering.
 
-## Технологии
+## Technologies
 
 - Blazor WebAssembly  
 - .NET 6 (`net6.0`)  
 - C#  
 - Razor Components  
 
-Используемые пакеты:
+Used packages:
 
 - `Microsoft.AspNetCore.Components.WebAssembly` (6.0.14)  
 - `Microsoft.AspNetCore.Components.WebAssembly.DevServer` (6.0.14)  
 
-## Возможности
+## Features
 
-- Игровое поле 3x3  
-- Поочередный ход X и O  
-- Проверка победителя  
-- Определение ничьи  
-- Блокировка ходов после завершения партии  
-- Возможность перезапуска игры  
+- 3x3 game board  
+- Alternating turns between X and O  
+- Win detection  
+- Draw detection  
+- Move blocking after the game ends  
+- Game restart functionality  
 
-## Скриншоты
+## Screenshots
 
-### Пустое поле
+### Empty Board
 
 ![Empty Board](./Screenshots/TicTacToe.png)
 
-### Победа O
+### O Wins
 
 ![O Wins](./Screenshots/TicTacToeOWin.png)
 
-### Победа X
+### X Wins
 
 ![X Wins](./Screenshots/TicTacToeXWin.png)
 
-### Ничья
+### Draw
 
 ![Draw](./Screenshots/TicTacToeDraw.png)
 
-## Запуск проекта
+## Run the Project
 
-``` bash
+```bash
 dotnet restore
 dotnet run
 ````
 
-Приложение запускается через встроенный DevServer и открывается в браузере.
+The application runs using the built-in DevServer and opens in the browser.
 
-## Назначение проекта
+## Project Purpose
 
-Проект создавался как учебный эксперимент для понимания:
+This project was created as a learning experiment to understand:
 
-* архитектуры Blazor WASM
-* работы с компонентами
-* управления состоянием в клиентском приложении
-* обработки пользовательского ввода
-* логики рендеринга без JavaScript
+* Blazor WASM architecture
+* Component development
+* Client-side state management
+* User input handling
+* Rendering logic without JavaScript
